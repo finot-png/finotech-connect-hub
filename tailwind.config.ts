@@ -52,6 +52,8 @@ export default {
         'tech-orange': "hsl(var(--tech-orange))",
         'tech-gray': "hsl(var(--tech-gray))",
         'tech-dark': "hsl(var(--tech-dark))",
+        'warm-green': "hsl(var(--warm-green))",
+        'friendly-purple': "hsl(var(--friendly-purple))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

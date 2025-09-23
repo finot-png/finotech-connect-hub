@@ -14,18 +14,21 @@ const Header = () => {
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-foreground hover:text-tech-blue transition-colors">
-              Services
+              Tjänster
             </a>
             <a href="#about" className="text-foreground hover:text-tech-blue transition-colors">
-              About
+              Om oss
             </a>
             <a href="#contact" className="text-foreground hover:text-tech-blue transition-colors">
-              Contact
+              Kontakt
+            </a>
+            <a href="#login" className="text-foreground hover:text-tech-blue transition-colors">
+              Logga in
             </a>
           </nav>
           
           <Button variant="default" className="bg-tech-orange hover:bg-tech-orange/90">
-            Get Started
+            Kom igång
           </Button>
         </div>
       </div>

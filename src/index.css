@@ -36,21 +36,23 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    /* Custom design tokens */
-    --tech-blue: 214 85% 20%;
-    --tech-blue-light: 214 75% 35%;
-    --tech-orange: 25 95% 53%;
+    /* Custom design tokens - More personal, warmer colors */
+    --tech-blue: 205 80% 25%;
+    --tech-blue-light: 205 70% 40%;
+    --tech-orange: 25 85% 50%;
     --tech-gray: 220 14% 96%;
     --tech-dark: 222.2 84% 4.9%;
+    --warm-green: 140 60% 45%;
+    --friendly-purple: 260 60% 55%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--tech-blue-light)));
+    /* Gradients - Softer, more approachable */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--warm-green)));
     --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--tech-gray)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--tech-orange)), hsl(25 90% 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--tech-orange)), hsl(35 80% 55%));
     
-    /* Shadows */
-    --shadow-card: 0 4px 6px -1px hsl(var(--tech-blue) / 0.1), 0 2px 4px -1px hsl(var(--tech-blue) / 0.06);
-    --shadow-hero: 0 20px 25px -5px hsl(var(--tech-blue) / 0.15), 0 10px 10px -5px hsl(var(--tech-blue) / 0.04);
+    /* Shadows - Softer, more friendly */
+    --shadow-card: 0 4px 12px -3px hsl(var(--tech-blue) / 0.08), 0 2px 4px -1px hsl(var(--tech-blue) / 0.04);
+    --shadow-hero: 0 15px 30px -10px hsl(var(--tech-blue) / 0.12), 0 5px 15px -5px hsl(var(--tech-blue) / 0.06);
 
     --radius: 0.5rem;
 

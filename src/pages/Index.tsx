@@ -24,38 +24,38 @@ const Index = () => {
   const customerTypes = [
     {
       icon: Building2,
-      title: "Offices",
-      description: "Complete IT solutions for corporate environments",
+      title: "Kontor",
+      description: "Personlig IT-support för mindre företag",
       features: [
-        "Enterprise IT Support",
-        "Network Infrastructure",
-        "Microsoft Office 365",
-        "Cloud Backup Solutions",
-        "Security Systems"
+        "Lokal IT-support",
+        "Nätverkslösningar",
+        "Microsoft Office hjälp",
+        "Säker molnlagring",
+        "Säkerhetssystem"
       ]
     },
     {
       icon: Store,
-      title: "Stores",
-      description: "Retail-focused technology solutions",
+      title: "Butiker",
+      description: "IT-lösningar anpassade för din butik",
       features: [
-        "POS System Support",
-        "Inventory Management",
-        "Customer WiFi Setup",
-        "Security Cameras",
-        "Payment Processing"
+        "Kassasystem support",
+        "Lagerhantering",
+        "Kund-WiFi installation",
+        "Säkerhetskameror",
+        "Betallösningar"
       ]
     },
     {
       icon: Home,
-      title: "Properties",
-      description: "Residential and property management IT services",
+      title: "Fastigheter",
+      description: "Hemma-bäst IT-tjänster för privatpersoner",
       features: [
-        "Home Network Setup",
-        "Smart Home Integration",
-        "Property WiFi Solutions",
-        "Security Camera Systems",
-        "Device Configuration"
+        "Hemnätverk installation",
+        "Smart hem-integration",
+        "WiFi för hela fastigheten",
+        "Säkerhetskameror",
+        "Enhetsinstallation"
       ]
     }
   ];
@@ -63,39 +63,39 @@ const Index = () => {
   const services = [
     {
       icon: HeadphonesIcon,
-      title: "IT Support",
-      description: "24/7 technical assistance and troubleshooting",
-      features: ["Remote Support", "On-site Service", "Emergency Response", "Preventive Maintenance"]
+      title: "IT-Support",
+      description: "Vi hjälper dig när tekniken krånglar",
+      features: ["Support på distans", "Besök på plats", "Akuthjälp", "Förebyggande underhåll"]
     },
     {
       icon: Key,
-      title: "Microsoft Licenses",
-      description: "Official Microsoft software licensing solutions",
-      features: ["Office 365", "Windows Licenses", "Enterprise Agreements", "Volume Licensing"]
+      title: "Microsoft Licenser",
+      description: "Officiella Microsoft-licenser till bra priser",
+      features: ["Office 365", "Windows-licenser", "Företagsavtal", "Volymlicenser"]
     },
     {
       icon: Wifi,
-      title: "Network & Internet",
-      description: "Complete network installation and optimization",
-      features: ["Network Design", "WiFi Installation", "Internet Setup", "Network Security"]
+      title: "Nätverk & Internet",
+      description: "Professionell nätverksinstallation",
+      features: ["Nätverksdesign", "WiFi-installation", "Internetuppkoppling", "Nätverkssäkerhet"]
     },
     {
       icon: Cloud,
-      title: "Cloud Backup",
-      description: "Secure cloud storage and backup solutions",
-      features: ["Automated Backups", "Data Recovery", "Cloud Migration", "Disaster Planning"]
+      title: "Molnsäkerhetskopiering",
+      description: "Säker lagring av dina viktiga filer",
+      features: ["Automatiska säkerhetskopior", "Dataåterställning", "Molnmigrering", "Katastrofplanering"]
     },
     {
       icon: Monitor,
-      title: "Computers",
-      description: "Hardware sales, setup, and maintenance",
-      features: ["Computer Sales", "Hardware Upgrades", "System Setup", "Performance Optimization"]
+      title: "Datorer",
+      description: "Försäljning, installation och service",
+      features: ["Datorförsäljning", "Hårdvaruuppgraderingar", "Systeminstallation", "Prestandaoptimering"]
     },
     {
       icon: Camera,
-      title: "Security Systems",
-      description: "Professional security camera installations",
-      features: ["CCTV Installation", "Remote Monitoring", "Access Control", "Security Audits"]
+      title: "Säkerhetssystem",
+      description: "Professionell installation av kamerasystem",
+      features: ["CCTV-installation", "Fjärrövervakning", "Åtkomstkontroll", "Säkerhetsgenomgångar"]
     }
   ];
 
@@ -116,19 +116,19 @@ const Index = () => {
         
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            Professional IT Services for 
-            <span className="text-tech-orange"> Your Business</span>
+            Personlig IT-support för 
+            <span className="text-tech-orange"> ditt företag</span>
           </h1>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-            Finotech provides comprehensive IT solutions for offices, stores, and properties. 
-            From support to security, we've got your technology needs covered.
+            Finotech hjälper mindre företag, butiker och fastighetsägare med alla IT-behov. 
+            Vi finns här när du behöver oss - enkelt, personligt och pålitligt.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6">
-              Get Free Consultation
+              Få gratis rådgivning
             </Button>
             <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-tech-blue text-lg px-8 py-6">
-              View Services
+              Se våra tjänster
             </Button>
           </div>
         </div>
@@ -139,10 +139,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-tech-blue mb-4">
-              Who We Serve
+              Vilka vi hjälper
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Tailored IT solutions for different business environments
+              Skräddarsydda IT-lösningar för olika typer av verksamheter
             </p>
           </div>
           
@@ -159,10 +159,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-tech-blue mb-4">
-              Our Services
+              Våra tjänster
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Complete technology solutions to keep your business running smoothly
+              Kompletta tekniklösningar som håller ditt företag igång
             </p>
           </div>
           
@@ -179,7 +179,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-tech-blue mb-8">
-              Why Choose Finotech?
+              Varför välja Finotech?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <Card className="bg-background shadow-card border-0">
@@ -187,8 +187,8 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                     <HeadphonesIcon className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Expert Support</h3>
-                  <p className="text-muted-foreground">Professional technicians with years of experience</p>
+                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Personlig service</h3>
+                  <p className="text-muted-foreground">Vi lär känna dig och ditt företag för att ge bästa möjliga hjälp</p>
                 </CardContent>
               </Card>
               
@@ -197,8 +197,8 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold text-tech-blue mb-2">24/7 Availability</h3>
-                  <p className="text-muted-foreground">Round-the-clock support when you need it most</p>
+                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Snabb hjälp</h3>
+                  <p className="text-muted-foreground">Vi svarar snabbt och kommer ut samma dag när det behövs</p>
                 </CardContent>
               </Card>
               
@@ -207,8 +207,8 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                     <Key className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Trusted Solutions</h3>
-                  <p className="text-muted-foreground">Official partnerships and certified services</p>
+                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Pålitliga lösningar</h3>
+                  <p className="text-muted-foreground">Kvalitetsprodukter och äkta licenser till bra priser</p>
                 </CardContent>
               </Card>
             </div>
@@ -221,10 +221,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-primary-foreground mb-8">
-              Ready to Get Started?
+              Redo att komma igång?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-12">
-              Contact us today for a free consultation and discover how we can help your business
+              Kontakta oss idag för en gratis rådgivning och upptäck hur vi kan hjälpa ditt företag
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -232,29 +232,29 @@ const Index = () => {
                 <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-2">Phone</h3>
-                <p className="text-primary-foreground/80">(555) 123-4567</p>
+                <h3 className="text-lg font-semibold text-primary-foreground mb-2">Telefon</h3>
+                <p className="text-primary-foreground/80">0123-456 789</p>
               </div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-2">Email</h3>
-                <p className="text-primary-foreground/80">contact@finotech.com</p>
+                <h3 className="text-lg font-semibold text-primary-foreground mb-2">E-post</h3>
+                <p className="text-primary-foreground/80">hej@finotech.se</p>
               </div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-2">Location</h3>
-                <p className="text-primary-foreground/80">Serving Your Area</p>
+                <h3 className="text-lg font-semibold text-primary-foreground mb-2">Plats</h3>
+                <p className="text-primary-foreground/80">Vi kommer till dig</p>
               </div>
             </div>
             
             <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6">
-              Schedule Consultation
+              Boka konsultation
             </Button>
           </div>
         </div>
@@ -271,10 +271,10 @@ const Index = () => {
               <span className="text-2xl font-bold">Finotech</span>
             </div>
             <p className="text-primary-foreground/70 mb-4">
-              Professional IT Services for Offices, Stores & Properties
+              Personlig IT-support för kontor, butiker och fastigheter
             </p>
             <p className="text-primary-foreground/50 text-sm">
-              © 2024 Finotech. All rights reserved.
+              © 2024 Finotech. Alla rättigheter förbehållna.
             </p>
           </div>
         </div>
