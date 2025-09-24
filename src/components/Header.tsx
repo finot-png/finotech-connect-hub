@@ -1,36 +1,125 @@
+import { Menu, X, LogOut, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { useAuth } from "@/hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, signOut } = useAuth();
+  const navigate = useNavigate();
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const handleAuthAction = () => {
+    if (user) {
+      navigate('/dashboard');
+    } else {
+      navigate('/auth');
+    }
+  };
+
+  const handleSignOut = async () => {
+    await signOut();
+    navigate('/');
+  };
+
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">F</span>
-            </div>
-            <span className="text-2xl font-bold text-tech-blue">Finotech</span>
+          <div 
+            className="text-2xl font-bold text-primary cursor-pointer"
+            onClick={() => navigate('/')}
+          >
+            IT-Tjänsten
           </div>
           
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-foreground hover:text-tech-blue transition-colors">
-              Tjänster
-            </a>
-            <a href="#about" className="text-foreground hover:text-tech-blue transition-colors">
-              Om oss
-            </a>
-            <a href="#contact" className="text-foreground hover:text-tech-blue transition-colors">
-              Kontakt
-            </a>
-            <a href="#login" className="text-foreground hover:text-tech-blue transition-colors">
-              Logga in
-            </a>
+            <a href="#hem" className="text-foreground hover:text-primary transition-colors">Hem</a>
+            <a href="#tjanster" className="text-foreground hover:text-primary transition-colors">Tjänster</a>
+            <a href="#om-oss" className="text-foreground hover:text-primary transition-colors">Om oss</a>
+            <a href="#kontakt" className="text-foreground hover:text-primary transition-colors">Kontakt</a>
           </nav>
-          
-          <Button variant="default" className="bg-tech-orange hover:bg-tech-orange/90">
-            Kom igång
-          </Button>
+
+          {/* Desktop Auth Section */}
+          <div className="hidden md:flex items-center space-x-4">
+            {user ? (
+              <>
+                <Button 
+                  variant="ghost" 
+                  onClick={handleAuthAction}
+                  className="flex items-center space-x-2"
+                >
+                  <User className="h-4 w-4" />
+                  <span>Min portal</span>
+                </Button>
+                <Button 
+                  variant="outline" 
+                  onClick={handleSignOut}
+                  className="flex items-center space-x-2"
+                >
+                  <LogOut className="h-4 w-4" />
+                  <span>Logga ut</span>
+                </Button>
+              </>
+            ) : (
+              <Button 
+                onClick={handleAuthAction}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
+                Logga in
+              </Button>
+            )}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden text-foreground hover:text-primary transition-colors"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <nav className="md:hidden mt-4 pb-4 space-y-4">
+            <a href="#hem" className="block text-foreground hover:text-primary transition-colors">Hem</a>
+            <a href="#tjanster" className="block text-foreground hover:text-primary transition-colors">Tjänster</a>
+            <a href="#om-oss" className="block text-foreground hover:text-primary transition-colors">Om oss</a>
+            <a href="#kontakt" className="block text-foreground hover:text-primary transition-colors">Kontakt</a>
+            
+            {user ? (
+              <div className="space-y-2">
+                <Button 
+                  variant="outline" 
+                  onClick={handleAuthAction}
+                  className="w-full flex items-center justify-center space-x-2"
+                >
+                  <User className="h-4 w-4" />
+                  <span>Min portal</span>
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  onClick={handleSignOut}
+                  className="w-full flex items-center justify-center space-x-2"
+                >
+                  <LogOut className="h-4 w-4" />
+                  <span>Logga ut</span>
+                </Button>
+              </div>
+            ) : (
+              <Button 
+                onClick={handleAuthAction}
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
+                Logga in
+              </Button>
+            )}
+          </nav>
+        )}
       </div>
     </header>
   );
