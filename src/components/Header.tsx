@@ -1,12 +1,14 @@
-import { Menu, X, LogOut, User } from "lucide-react";
+import { Menu, X, LogOut, User, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
+import { useAdmin } from "@/hooks/useAdmin";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user, signOut } = useAuth();
+  const { isAdmin } = useAdmin();
   const navigate = useNavigate();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -55,6 +57,16 @@ const Header = () => {
                   <User className="h-4 w-4" />
                   <span>Min portal</span>
                 </Button>
+                {isAdmin && (
+                  <Button 
+                    variant="ghost" 
+                    onClick={() => navigate('/admin')}
+                    className="flex items-center space-x-2"
+                  >
+                    <Settings className="h-4 w-4" />
+                    <span>Admin</span>
+                  </Button>
+                )}
                 <Button 
                   variant="outline" 
                   onClick={handleSignOut}
@@ -101,6 +113,16 @@ const Header = () => {
                   <User className="h-4 w-4" />
                   <span>Min portal</span>
                 </Button>
+                {isAdmin && (
+                  <Button 
+                    variant="outline" 
+                    onClick={() => navigate('/admin')}
+                    className="w-full flex items-center justify-center space-x-2"
+                  >
+                    <Settings className="h-4 w-4" />
+                    <span>Admin</span>
+                  </Button>
+                )}
                 <Button 
                   variant="ghost" 
                   onClick={handleSignOut}

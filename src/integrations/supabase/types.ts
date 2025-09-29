@@ -14,6 +14,110 @@ export type Database = {
   }
   public: {
     Tables: {
+      customers: {
+        Row: {
+          address: string | null
+          city: string | null
+          company_name: string
+          contact_person: string | null
+          country: string | null
+          created_at: string | null
+          email: string | null
+          id: string
+          notes: string | null
+          phone: string | null
+          postal_code: string | null
+          status: string | null
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          address?: string | null
+          city?: string | null
+          company_name: string
+          contact_person?: string | null
+          country?: string | null
+          created_at?: string | null
+          email?: string | null
+          id?: string
+          notes?: string | null
+          phone?: string | null
+          postal_code?: string | null
+          status?: string | null
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          address?: string | null
+          city?: string | null
+          company_name?: string
+          contact_person?: string | null
+          country?: string | null
+          created_at?: string | null
+          email?: string | null
+          id?: string
+          notes?: string | null
+          phone?: string | null
+          postal_code?: string | null
+          status?: string | null
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      invoices: {
+        Row: {
+          amount: number
+          created_at: string | null
+          currency: string | null
+          customer_id: string
+          description: string | null
+          due_date: string | null
+          id: string
+          invoice_number: string
+          paid_date: string | null
+          sent_date: string | null
+          status: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          amount: number
+          created_at?: string | null
+          currency?: string | null
+          customer_id: string
+          description?: string | null
+          due_date?: string | null
+          id?: string
+          invoice_number: string
+          paid_date?: string | null
+          sent_date?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          amount?: number
+          created_at?: string | null
+          currency?: string | null
+          customer_id?: string
+          description?: string | null
+          due_date?: string | null
+          id?: string
+          invoice_number?: string
+          paid_date?: string | null
+          sent_date?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "invoices_customer_id_fkey"
+            columns: ["customer_id"]
+            isOneToOne: false
+            referencedRelation: "customers"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
           company_name: string | null
@@ -44,15 +148,142 @@ export type Database = {
         }
         Relationships: []
       }
+      sales_activities: {
+        Row: {
+          activity_type: string
+          completed_date: string | null
+          created_at: string | null
+          customer_id: string | null
+          description: string | null
+          id: string
+          priority: string | null
+          scheduled_date: string | null
+          status: string | null
+          title: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          activity_type: string
+          completed_date?: string | null
+          created_at?: string | null
+          customer_id?: string | null
+          description?: string | null
+          id?: string
+          priority?: string | null
+          scheduled_date?: string | null
+          status?: string | null
+          title: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          activity_type?: string
+          completed_date?: string | null
+          created_at?: string | null
+          customer_id?: string | null
+          description?: string | null
+          id?: string
+          priority?: string | null
+          scheduled_date?: string | null
+          status?: string | null
+          title?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "sales_activities_customer_id_fkey"
+            columns: ["customer_id"]
+            isOneToOne: false
+            referencedRelation: "customers"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      services: {
+        Row: {
+          created_at: string | null
+          customer_id: string
+          description: string | null
+          end_date: string | null
+          id: string
+          monthly_price: number | null
+          name: string
+          start_date: string | null
+          status: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          customer_id: string
+          description?: string | null
+          end_date?: string | null
+          id?: string
+          monthly_price?: number | null
+          name: string
+          start_date?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          customer_id?: string
+          description?: string | null
+          end_date?: string | null
+          id?: string
+          monthly_price?: number | null
+          name?: string
+          start_date?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "services_customer_id_fkey"
+            columns: ["customer_id"]
+            isOneToOne: false
+            referencedRelation: "customers"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_roles: {
+        Row: {
+          created_at: string | null
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "customer" | "sales"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -179,6 +410,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "customer", "sales"],
+    },
   },
 } as const
