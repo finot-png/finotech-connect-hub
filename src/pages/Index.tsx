@@ -126,7 +126,7 @@ const Index = () => {
             <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6">
               Få gratis rådgivning
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-tech-blue text-lg px-8 py-6">
+            <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-tech-blue text-lg px-8 py-6">
               Se våra tjänster
             </Button>
           </div>
