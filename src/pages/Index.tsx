@@ -206,7 +206,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
            <div className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <img src={finotechLogo} alt="Finotech" className="h-16" />
+              
             </div>
             <p className="font-body text-primary-foreground/70 mb-4">
               Personlig IT-support för kontor, butiker och fastigheter
