@@ -56,7 +56,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section id="hem" className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImage} alt="Professional IT Services" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-hero opacity-90" />
@@ -97,7 +97,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20">
+      <section id="tjanster" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-tech-blue mb-4">
@@ -115,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-tech-gray/50">
+      <section id="om-oss" className="py-20 bg-tech-gray/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-tech-blue mb-8">
@@ -157,7 +157,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-hero">
+      <section id="kontakt" className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-primary-foreground mb-8">
