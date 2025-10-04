@@ -116,7 +116,7 @@ const Index = () => {
         
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            <span className="text-tech-orange">IT-Tjänsten</span> På Ditt Sätt
+            <span className="text-tech-orange">IT-Tjänst</span> På Ditt Sätt
           </h1>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
             Finotech hjälper mindre företag, butiker och fastighetsägare med alla IT-behov. 
