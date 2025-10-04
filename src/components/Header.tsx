@@ -35,7 +35,7 @@ const Header = () => {
             className="cursor-pointer"
             onClick={() => navigate('/')}
           >
-            <img src={finotechLogo} alt="Finotech" className="h-10" />
+            <img src={finotechLogo} alt="Finotech" className="h-16 md:h-20" />
           </div>
           
           {/* Desktop Navigation */}

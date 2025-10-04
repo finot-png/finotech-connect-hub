@@ -46,7 +46,7 @@ All colors MUST be HSL.
     --friendly-purple: 316 11% 33%;
     
     /* Gradients - Brand colors */
-    --gradient-hero: linear-gradient(135deg, hsl(316 11% 33%), hsl(20 100% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(316 11% 33%), hsl(316 11% 45%));
     --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--tech-gray)));
     --gradient-accent: linear-gradient(135deg, hsl(20 100% 50%), hsl(25 100% 55%));
     

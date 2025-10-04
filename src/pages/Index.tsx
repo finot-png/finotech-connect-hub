@@ -65,11 +65,11 @@ const Index = () => {
         
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-heading text-primary-foreground mb-6 leading-tight">
-            <span className="text-tech-orange">IT-Tjänst</span> På Ditt Sätt
+            IT-Tjänst På Ditt Sätt
           </h1>
           <p className="text-xl font-body text-primary-foreground/90 mb-8 max-w-3xl mx-auto">Vi hjälper mindre företag, butiker och fastighetsägare med alla IT-behov. Vi finns här när du behöver oss - enkelt, personligt och pålitligt.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6 font-heading">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-6 font-heading">
               Få gratis rådgivning
             </Button>
             <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 font-heading">
@@ -123,10 +123,10 @@ const Index = () => {
               Varför välja Finotech?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
-              <Card className="bg-background shadow-card border-0">
+               <Card className="bg-background shadow-card border-0">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
-                    <HeadphonesIcon className="w-8 h-8 text-primary-foreground" />
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <HeadphonesIcon className="w-8 h-8 text-primary" />
                   </div>
                    <h3 className="text-xl font-heading text-primary mb-2">Personlig service</h3>
                    <p className="font-body text-muted-foreground">Vi lär känna dig och ditt företag för att ge bästa möjliga hjälp</p>
@@ -135,8 +135,8 @@ const Index = () => {
               
               <Card className="bg-background shadow-card border-0">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Clock className="w-8 h-8 text-primary-foreground" />
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Clock className="w-8 h-8 text-primary" />
                   </div>
                    <h3 className="text-xl font-heading text-primary mb-2">Snabb hjälp</h3>
                    <p className="font-body text-muted-foreground">Vi svarar snabbt och kommer ut samma dag när det behövs</p>
@@ -145,8 +145,8 @@ const Index = () => {
               
               <Card className="bg-background shadow-card border-0">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Key className="w-8 h-8 text-primary-foreground" />
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Key className="w-8 h-8 text-primary" />
                   </div>
                    <h3 className="text-xl font-heading text-primary mb-2">Pålitliga lösningar</h3>
                    <p className="font-body text-muted-foreground">Kvalitetsprodukter och äkta licenser till bra priser</p>
@@ -170,7 +170,7 @@ const Index = () => {
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                  <h3 className="text-lg font-heading text-primary-foreground mb-2">Telefon</h3>
@@ -178,7 +178,7 @@ const Index = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                  <h3 className="text-lg font-heading text-primary-foreground mb-2">E-post</h3>
@@ -186,7 +186,7 @@ const Index = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
                  <h3 className="text-lg font-heading text-primary-foreground mb-2">Plats</h3>
@@ -194,7 +194,7 @@ const Index = () => {
               </div>
             </div>
             
-            <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6 font-heading">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-6 font-heading">
               Boka konsultation
             </Button>
           </div>
