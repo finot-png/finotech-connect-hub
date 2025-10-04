@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import ServiceCard from "@/components/ServiceCard";
 import { Building2, Store, Home, HeadphonesIcon, Key, Wifi, Cloud, Monitor, Smartphone, Camera, Mail, Phone, MapPin, Clock } from "lucide-react";
 import heroImage from "@/assets/hero-tech.jpg";
+import finotechLogo from "@/assets/finotech-logo.png";
 const Index = () => {
   const customerTypes = [{
     icon: Building2,
@@ -63,15 +64,15 @@ const Index = () => {
         </div>
         
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-heading text-primary-foreground mb-6 leading-tight">
             <span className="text-tech-orange">IT-Tjänst</span> På Ditt Sätt
           </h1>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">Vi hjälper mindre företag, butiker och fastighetsägare med alla IT-behov. Vi finns här när du behöver oss - enkelt, personligt och pålitligt.</p>
+          <p className="text-xl font-body text-primary-foreground/90 mb-8 max-w-3xl mx-auto">Vi hjälper mindre företag, butiker och fastighetsägare med alla IT-behov. Vi finns här när du behöver oss - enkelt, personligt och pålitligt.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6">
+            <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6 font-heading">
               Få gratis rådgivning
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-tech-blue text-lg px-8 py-6">
+            <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 font-heading">
               Se våra tjänster
             </Button>
           </div>
@@ -82,10 +83,10 @@ const Index = () => {
       <section className="py-20 bg-tech-gray/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-tech-blue mb-4">
+            <h2 className="text-4xl font-heading text-primary mb-4">
               Vilka vi hjälper
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl font-body text-muted-foreground max-w-2xl mx-auto">
               Skräddarsydda IT-lösningar för olika typer av verksamheter
             </p>
           </div>
@@ -100,10 +101,10 @@ const Index = () => {
       <section id="tjanster" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-tech-blue mb-4">
+            <h2 className="text-4xl font-heading text-primary mb-4">
               Våra tjänster
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl font-body text-muted-foreground max-w-2xl mx-auto">
               Kompletta tekniklösningar som håller ditt företag igång
             </p>
           </div>
@@ -118,7 +119,7 @@ const Index = () => {
       <section id="om-oss" className="py-20 bg-tech-gray/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-tech-blue mb-8">
+            <h2 className="text-4xl font-heading text-primary mb-8">
               Varför välja Finotech?
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -127,8 +128,8 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                     <HeadphonesIcon className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Personlig service</h3>
-                  <p className="text-muted-foreground">Vi lär känna dig och ditt företag för att ge bästa möjliga hjälp</p>
+                   <h3 className="text-xl font-heading text-primary mb-2">Personlig service</h3>
+                   <p className="font-body text-muted-foreground">Vi lär känna dig och ditt företag för att ge bästa möjliga hjälp</p>
                 </CardContent>
               </Card>
               
@@ -137,8 +138,8 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Snabb hjälp</h3>
-                  <p className="text-muted-foreground">Vi svarar snabbt och kommer ut samma dag när det behövs</p>
+                   <h3 className="text-xl font-heading text-primary mb-2">Snabb hjälp</h3>
+                   <p className="font-body text-muted-foreground">Vi svarar snabbt och kommer ut samma dag när det behövs</p>
                 </CardContent>
               </Card>
               
@@ -147,8 +148,8 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                     <Key className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold text-tech-blue mb-2">Pålitliga lösningar</h3>
-                  <p className="text-muted-foreground">Kvalitetsprodukter och äkta licenser till bra priser</p>
+                   <h3 className="text-xl font-heading text-primary mb-2">Pålitliga lösningar</h3>
+                   <p className="font-body text-muted-foreground">Kvalitetsprodukter och äkta licenser till bra priser</p>
                 </CardContent>
               </Card>
             </div>
@@ -160,10 +161,10 @@ const Index = () => {
       <section id="kontakt" className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-primary-foreground mb-8">
+            <h2 className="text-4xl font-heading text-primary-foreground mb-8">
               Redo att komma igång?
             </h2>
-            <p className="text-xl text-primary-foreground/90 mb-12">
+            <p className="text-xl font-body text-primary-foreground/90 mb-12">
               Kontakta oss idag för en gratis rådgivning och upptäck hur vi kan hjälpa ditt företag
             </p>
             
@@ -172,28 +173,28 @@ const Index = () => {
                 <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-2">Telefon</h3>
-                <p className="text-primary-foreground/80">0123-456 789</p>
+                 <h3 className="text-lg font-heading text-primary-foreground mb-2">Telefon</h3>
+                 <p className="font-body text-primary-foreground/80">0123-456 789</p>
               </div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-2">E-post</h3>
-                <p className="text-primary-foreground/80">hej@finotech.se</p>
+                 <h3 className="text-lg font-heading text-primary-foreground mb-2">E-post</h3>
+                 <p className="font-body text-primary-foreground/80">hej@finotech.se</p>
               </div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-tech-orange rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-2">Plats</h3>
-                <p className="text-primary-foreground/80">Vi kommer till dig</p>
+                 <h3 className="text-lg font-heading text-primary-foreground mb-2">Plats</h3>
+                 <p className="font-body text-primary-foreground/80">Vi kommer till dig</p>
               </div>
             </div>
             
-            <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6">
+            <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-lg px-8 py-6 font-heading">
               Boka konsultation
             </Button>
           </div>
@@ -203,17 +204,14 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-tech-dark text-primary-foreground py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">F</span>
-              </div>
-              <span className="text-2xl font-bold">Finotech</span>
+           <div className="text-center">
+            <div className="flex items-center justify-center mb-4">
+              <img src={finotechLogo} alt="Finotech" className="h-16" />
             </div>
-            <p className="text-primary-foreground/70 mb-4">
+            <p className="font-body text-primary-foreground/70 mb-4">
               Personlig IT-support för kontor, butiker och fastigheter
             </p>
-            <p className="text-primary-foreground/50 text-sm">
+            <p className="font-body text-primary-foreground/50 text-sm">
               © 2024 Finotech. Alla rättigheter förbehållna.
             </p>
           </div>

@@ -8,51 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 120 4% 96%;
+    --foreground: 316 11% 33%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 316 11% 33%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 316 11% 33%;
 
-    --primary: 214 85% 20%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 316 11% 33%;
+    --primary-foreground: 120 4% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 120 4% 96%;
+    --secondary-foreground: 316 11% 33%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 120 4% 90%;
+    --muted-foreground: 316 11% 50%;
 
-    --accent: 25 95% 53%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 20 100% 50%;
+    --accent-foreground: 120 4% 96%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 120 4% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 120 4% 88%;
+    --input: 120 4% 88%;
+    --ring: 316 11% 33%;
 
-    /* Custom design tokens - More personal, warmer colors */
-    --tech-blue: 205 80% 25%;
-    --tech-blue-light: 205 70% 40%;
-    --tech-orange: 25 85% 50%;
-    --tech-gray: 220 14% 96%;
-    --tech-dark: 222.2 84% 4.9%;
+    /* Custom design tokens - Finotech brand colors */
+    --tech-blue: 316 11% 33%;
+    --tech-blue-light: 316 11% 45%;
+    --tech-orange: 20 100% 50%;
+    --tech-gray: 120 4% 96%;
+    --tech-dark: 316 11% 20%;
     --warm-green: 140 60% 45%;
-    --friendly-purple: 260 60% 55%;
+    --friendly-purple: 316 11% 33%;
     
-    /* Gradients - Softer, more approachable */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--warm-green)));
+    /* Gradients - Brand colors */
+    --gradient-hero: linear-gradient(135deg, hsl(316 11% 33%), hsl(20 100% 50%));
     --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--tech-gray)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--tech-orange)), hsl(35 80% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(20 100% 50%), hsl(25 100% 55%));
     
     /* Shadows - Softer, more friendly */
-    --shadow-card: 0 4px 12px -3px hsl(var(--tech-blue) / 0.08), 0 2px 4px -1px hsl(var(--tech-blue) / 0.04);
-    --shadow-hero: 0 15px 30px -10px hsl(var(--tech-blue) / 0.12), 0 5px 15px -5px hsl(var(--tech-blue) / 0.06);
+    --shadow-card: 0 4px 12px -3px hsl(316 11% 33% / 0.08), 0 2px 4px -1px hsl(316 11% 33% / 0.04);
+    --shadow-hero: 0 15px 30px -10px hsl(316 11% 33% / 0.12), 0 5px 15px -5px hsl(316 11% 33% / 0.06);
 
     --radius: 0.5rem;
 

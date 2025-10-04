@@ -13,6 +13,15 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Segoe UI"', 'system-ui', 'sans-serif'],
+        heading: ['"Segoe UI"', 'system-ui', 'sans-serif'],
+        body: ['"Segoe UI Light"', '"Segoe UI"', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'heading': '16pt',
+        'body': '12pt',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

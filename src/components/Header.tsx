@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { useAdmin } from "@/hooks/useAdmin";
 import { useNavigate } from "react-router-dom";
+import finotechLogo from "@/assets/finotech-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,10 +32,10 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div 
-            className="text-2xl font-bold text-primary cursor-pointer"
+            className="cursor-pointer"
             onClick={() => navigate('/')}
           >
-            IT-Tjänsten
+            <img src={finotechLogo} alt="Finotech" className="h-10" />
           </div>
           
           {/* Desktop Navigation */}
