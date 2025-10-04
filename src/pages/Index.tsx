@@ -194,9 +194,7 @@ const Index = () => {
               </div>
             </div>
             
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-6 font-heading">
-              Boka konsultation
-            </Button>
+            
           </div>
         </div>
       </section>
